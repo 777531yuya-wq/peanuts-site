@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要 | 株式会社PEANUTS</title>
+
+<style>
+body{
+font-family:-apple-system,sans-serif;
+background:#fff;
+color:#111;
+padding:50px;
+max-width:1000px;
+margin:auto;
+line-height:1.8;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.card{
+background:#f5f5f7;
+padding:30px;
+border-radius:20px;
+margin-top:20px;
+}
+
+a{
+display:inline-block;
+margin-top:30px;
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<h1>会社概要</h1>
+
+<div class="card">
+<h2>株式会社PEANUTS</h2>
+
+<p>設立：2026年</p>
+<p>代表取締役：ピーナッツ</p>
+<p>平社員：ヒダカ</p>
+<p>企業理念：未来へ向けて、出発進行。</p>
+</div>
+
+<div class="card">
+<h2>事業内容</h2>
+
+<p>AI活用支援</p>
+<p>Webサイト制作</p>
+<p>AWS導入支援</p>
+</div>
+
+<a href="index.html">
+← トップページへ戻る
+</a>
+
+</body>
+</html>
