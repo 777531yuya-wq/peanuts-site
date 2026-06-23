@@ -4,84 +4,220 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>株式会社PEANUTS</title>
+
 <style>
-body{
+*{
 margin:0;
-font-family:sans-serif;
-background:#f5f5f5;
-color:#333;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+background:#fff;
+color:#111;
+line-height:1.7;
+}
+
 header{
-background:linear-gradient(135deg,#ffb300,#ff6f00);
+background:#000;
 color:white;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:100px 20px;
+padding:40px;
 }
-h1{
-font-size:50px;
-}
-section{
-max-width:1000px;
-margin:auto;
-padding:50px 20px;
-}
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
+
+.hero h1{
+font-size:clamp(3rem,8vw,6rem);
+font-weight:700;
 margin-bottom:20px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
+
+.hero p{
+font-size:1.3rem;
+color:#bbb;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:16px 32px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:999px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:120px 30px;
+}
+
+.section-title{
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.about{
+font-size:1.2rem;
+color:#555;
+max-width:800px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#f5f5f7;
+padding:40px;
+border-radius:30px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+font-size:1.5rem;
+margin-bottom:15px;
+}
+
+.members{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.member{
+background:#f5f5f7;
+border-radius:30px;
+padding:40px;
+}
+
+.member h3{
+font-size:2rem;
+margin-bottom:10px;
+}
+
+.role{
+color:#666;
+margin-bottom:20px;
+}
+
 footer{
-background:#222;
+background:#000;
 color:white;
 text-align:center;
-padding:20px;
+padding:60px 20px;
+}
+
+footer p{
+color:#aaa;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>🥜 株式会社PEANUTS</h1>
-<p>AIで未来を変える。たまにヒダカも働く。</p>
+<div class="hero">
+<p>株式会社PEANUTS</p>
+<h1>AIで未来を変える。<br>たまにヒダカも働く。</h1>
+
+<p>
+AI・クラウド・Web開発を通じて、
+企業の課題解決を支援するテックカンパニー。
+</p>
+
+<a href="#about" class="btn">詳しく見る</a>
+</div>
 </header>
 
-<section>
-<div class="card">
-<h2>会社概要</h2>
-<p>
-株式会社PEANUTSはAIとITの力で未来を切り開く会社です。
-社長ピーナッツと平社員ヒダカが日々奮闘しています。
+<section id="about">
+<h2 class="section-title">会社概要</h2>
+
+<p class="about">
+株式会社PEANUTSは、AI技術の導入支援からシステム開発、
+クラウド構築まで幅広いサービスを提供しています。
+社長のピーナッツと平社員ヒダカを中心に、
+日々新しい価値を創造しています。
 </p>
+</section>
+
+<section>
+<h2 class="section-title">サービス</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🤖 AI導入支援</h3>
+<p>生成AIの導入から業務活用までサポート。</p>
 </div>
 
 <div class="card">
-<h2>社長紹介</h2>
-<p>🥜 ピーナッツ</p>
+<h3>☁️ クラウド構築</h3>
+<p>AWSを活用した安全なインフラ構築。</p>
+</div>
+
+<div class="card">
+<h3>💻 Web開発</h3>
+<p>企業サイトや業務システムを開発。</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">メンバー紹介</h2>
+
+<div class="members">
+
+<div class="member">
+<h3>🥜 ピーナッツ</h3>
+<p class="role">代表取締役社長</p>
+
 <p>好きなもの：利益</p>
 <p>嫌いなもの：残業代</p>
+<br>
+<p>「とりあえずAI使っとこう。」</p>
 </div>
 
-<div class="card">
-<h2>平社員紹介</h2>
-<p>👨 ヒダカ</p>
+<div class="member">
+<h3>👨 ヒダカ</h3>
+<p class="role">平社員</p>
+
 <p>好きなもの：定時退社</p>
 <p>嫌いなもの：月曜日</p>
+<br>
+<p>「その案件、本当にやるんですか？」</p>
 </div>
 
-<div class="card">
-<h2>サービス</h2>
-<ul>
-<li>AI導入支援</li>
-<li>ホームページ制作</li>
-<li>AWS支援</li>
-</ul>
 </div>
 </section>
 
 <footer>
-© 株式会社PEANUTS
+<h2>PEANUTS</h2>
+<p>AIで未来を変える。たまにヒダカも働く。</p>
+<br>
+<p>© 2026 株式会社PEANUTS</p>
 </footer>
 
 </body>
